@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock & Stopwatch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Time<span>Zone</span></h1>
+        <p>Your time, your control.</p>
+    </header>
+
+    <main class="container">
+
+        <section class="card">
+            <div class="icon">◷</div>
+            <h2>Digital Clock</h2>
+            <p class="subtitle">Current Local Time</p>
+
+            <div id="clock" class="clock">00:00:00</div>
+            <div id="period" class="period">AM</div>
+            <div id="date" class="date">Loading date...</div>
+        </section>
+
+        <section class="card">
+            <div class="icon">⏱</div>
+            <h2>Stopwatch</h2>
+            <p class="subtitle">Measure your time</p>
+
+            <div id="stopwatch" class="clock">
+                00:00:00.00
+            </div>
+
+            <div class="buttons">
+                <button id="startBtn" class="start">Start</button>
+                <button id="pauseBtn" class="pause">Pause</button>
+                <button id="resetBtn" class="reset">Reset</button>
+            </div>
+
+            <button id="lapBtn" class="lap-button">Record Lap</button>
+
+            <div class="laps-container">
+                <h3>Lap Records</h3>
+                <ul id="lapsList">
+                    <li class="empty">No laps recorded yet</li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Designed with HTML, CSS & JavaScript</p>
+        <p>© 2026 TimeZone. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+x
